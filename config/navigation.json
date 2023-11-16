@@ -1,0 +1,16 @@
+{
+  "primary": [
+    {
+      "path": "/works",
+      "text": "Works"
+    },
+    {
+      "path": "/metadata",
+      "text": "Metadata"
+    },
+    {
+      "path": "/map",
+      "text": "Map"
+    }
+  ]
+}
