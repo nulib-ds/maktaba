@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://potential-adventure-6391vr6.pages.github.io
+Host: https://canopy-iiif.github.io
 
 # Sitemaps
-Sitemap: https://potential-adventure-6391vr6.pages.github.io/sitemap.xml
+Sitemap: https://canopy-iiif.github.io/sitemap.xml
