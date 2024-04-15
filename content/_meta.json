@@ -1,14 +1,14 @@
 [
   {
     "path": "/works",
-    "text": "Works"
+    "text": "Manuscripts"
+  },
+  {
+    "path": "/essays",
+    "text": "Essays"
   },
   {
     "path": "/metadata",
     "text": "Metadata"
-  },
-  {
-    "path": "/manuscripts",
-    "text": "Manuscripts"
   }
 ]
