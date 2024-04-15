@@ -16,8 +16,8 @@ export const GoogleFontImport = () => (
   </>
 );
 
-const sans = `var(--canopy-sans-font)`;
-const display = `var(--canopy-display-font)`;
+const sans = `var(--canopy-sans-font) !important`;
+const display = `var(--canopy-display-font) !important`;
 
 const fonts = {
   sans,
