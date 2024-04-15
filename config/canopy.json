@@ -1,30 +1,59 @@
 {
-  "prod": {
-    "label": { "none": ["Maktaba"] },
-    "summary": {
-      "none": [
-        "A digital collection of 20 African Arabic manuscripts from University of Illinois at Urbana-Champaign and Northwestern University with images, translations, and brief essays."
-      ]
-    },
-    "collection": "https://api.dc.library.northwestern.edu/api/v2/search?query=%22maktaba%20grant%22&as=iiif&size=100",
-    "featured": [
-      "https://api.dc.library.northwestern.edu/api/v2/works/b091b665-862e-4c89-b2a7-41b44d067eb9?as=iiif",
-      "https://api.dc.library.northwestern.edu/api/v2/works/21e0766f-9d7b-41b6-9ce8-40a99f600976?as=iiif"
-    ],
-    "metadata": ["Date", "Subject", "Language", "Genre", "Dimensions"]
+  "label": { "none": ["Maktaba"] },
+  "summary": {
+    "none": [
+      "A digital collection of 20 African Arabic manuscripts from University of Illinois at Urbana-Champaign and Northwestern University with images, translations, and brief essays."
+    ]
   },
-  "dev": {
-    "label": { "none": ["Maktaba"] },
-    "summary": {
-      "none": [
-        "A digital collection of 20 African Arabic manuscripts from University of Illinois at Urbana-Champaign and Northwestern University with images, translations, and brief essays."
-      ]
+  "collection": "https://iiif-maktaba.dc.library.northwestern.edu/collection.json",
+  "metadata": ["Date", "Subject"],
+  "locales": [
+    {
+      "config": "locales/en.json",
+      "label": "English إنجليزي",
+      "lang": "en"
     },
-    "collection": "https://api.dc.library.northwestern.edu/api/v2/search?query=%22maktaba%20grant%22&as=iiif&size=100",
-    "featured": [
-      "https://api.dc.library.northwestern.edu/api/v2/works/b091b665-862e-4c89-b2a7-41b44d067eb9?as=iiif",
-      "https://api.dc.library.northwestern.edu/api/v2/works/21e0766f-9d7b-41b6-9ce8-40a99f600976?as=iiif"
-    ],
-    "metadata": ["Date", "Subject", "Language", "Genre", "Dimensions"]
+    {
+      "config": "locales/ar.json",
+      "label": "Arabic عربي",
+      "lang": "ar"
+    }
+  ],
+  "search": {
+    "enabled": true,
+    "flexSearch": {
+      "bidirectional": false,
+      "charset": ["latin:extra", "arabic:extra"],
+      "document": {
+        "index": [
+          {
+            "bidirectional": true,
+            "depth": 3,
+            "field": "label",
+            "resolution": 9,
+            "tokenize": "full"
+          },
+          {
+            "field": "metadata",
+            "resolution": 2
+          },
+          {
+            "field": "summary",
+            "resolution": 1
+          }
+        ]
+      },
+      "optimize": true,
+      "tokenize": "strict"
+    },
+    "index": {
+      "metadata": {
+        "all": false,
+        "enabled": true
+      },
+      "summary": {
+        "enabled": true
+      }
+    }
   }
 }

@@ -35,6 +35,16 @@ const defaults = {
       lineHeight: "1.47em",
     },
   },
+
+  "main div > div > article": {
+    "> div, > p": {
+      wordWrap: "break-word",
+      whiteSpace: "pre-line !important",
+      fontFamily: "Georgia, serif",
+      lineHeight: "1.55em",
+      fontSize: "0.85em",
+    },
+  },
 };
 
 const globalStyles = globalCss({
