@@ -55,5 +55,13 @@
         "enabled": true
       }
     }
+  },
+  "theme": {
+    "defaultTheme": "light",
+    "accentColor": "indigo",
+    "grayColor": "mauve",
+    "panelBackground": "translucent",
+    "radius": "small",
+    "scaling": "105%"
   }
 }

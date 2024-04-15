@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/essays",
+    "text": "Essays"
+  },
+  {
+    "path": "/essays/example-essay",
+    "text": "Example Essay"
+  }
+]
