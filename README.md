@@ -2,6 +2,7 @@
 
 The Maktaba website utilizes Canopy IIIF, an open-source static site generator built on Next.js, which is designed for fast creation, contextualization, and customization of a discovery-focused digital scholarship and collections website using [IIIF](https://iiif.io/) APIs.
 
+- [Maktaba Documentation](/nulib-ds/maktaba/wiki) (Wiki)
 - [Canopy Documentation](https://canopy-iiif.github.io/docs/)
 
 ## Setup
