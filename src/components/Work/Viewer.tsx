@@ -4,8 +4,14 @@ import Viewer from "@src/components/Viewer/Viewer";
 
 const WorkViewer = (props: CloverViewerProps) => {
   return (
-    <Box height="50vh" position="relative">
-      <Viewer options={{ canvasHeight: "100%" }} {...props} />
+    <Box style={{ height: "768px" }} position="relative">
+      <Viewer
+        options={{
+          canvasHeight: "100%",
+          canvasBackgroundColor: "var(--accent-a2)",
+        }}
+        {...props}
+      />
     </Box>
   );
 };

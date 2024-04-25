@@ -1,44 +1,48 @@
-<Work.Viewer />
+<Box style={{ background: "linear-gradient(0deg, #0000 calc(100% - 38.2vh), var(--accent-a3) 100%)" }}>
+  <Container>
+    <Section pb="4">
+      <Work.Title size="9" mb="4" />
+      <Work.Summary size="4" color="gray" />
 
-<Container>
-  <Section pb="4">
-    <Work.Title size="8" mb="5" />
-    <Work.Summary size="4" color="gray" />
-  </Section>
+      <Work.Viewer />
 
-  <Section size="1">
-    <Tabs.Root defaultValue="details">
-      <Tabs.List>
-        <Tabs.Trigger value="details">Item Details</Tabs.Trigger>
-        <Tabs.Trigger value="essays">Referencing Content</Tabs.Trigger>
-        <Tabs.Trigger value="annotations">Transcriptions and Translations</Tabs.Trigger>
-      </Tabs.List>
+    </Section>
 
-      <Box pt="3">
-        <Tabs.Content value="details">
-          <Work.Metadata />
-          <Work.RequiredStatement />
-          <Work.ManifestId />
-        </Tabs.Content>
+    <Section size="1">
 
-        <Tabs.Content value="annotations">
-          <Work.Scroll />
-        </Tabs.Content>
+      <Tabs.Root defaultValue="details">
+        <Tabs.List size="2">
+          <Tabs.Trigger value="details">Details</Tabs.Trigger>
+          <Tabs.Trigger value="essays">Essays</Tabs.Trigger>
+          <Tabs.Trigger value="annotations">Transcriptions and Translations</Tabs.Trigger>
+        </Tabs.List>
 
-        <Tabs.Content value="essays">
-          <Work.ReferencingContent />
-        </Tabs.Content>
+        <Box py="3">
+          <Tabs.Content value="details">
+            <Work.Metadata />
+            <Work.RequiredStatement />
+            <Work.ManifestId />
+          </Tabs.Content>
 
-      </Box>
-    </Tabs.Root>
+          <Tabs.Content value="annotations">
+            <Work.Scroll />
+          </Tabs.Content>
 
-  </Section>
+          <Tabs.Content value="essays">
+            <Work.ReferencingContent />
+          </Tabs.Content>
 
-  <Section size="1">
-    ## Related Works
+        </Box>
+      </Tabs.Root>
 
-    <Work.Related />
+    </Section>
 
-  </Section>
+    <Section size="1">
+      ## Related Works
 
-</Container>
+      <Work.Related />
+
+    </Section>
+
+  </Container>
+</Box>

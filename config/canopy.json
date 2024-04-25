@@ -57,11 +57,10 @@
     }
   },
   "theme": {
-    "defaultTheme": "light",
-    "accentColor": "indigo",
-    "grayColor": "mauve",
+    "defaultTheme": "dark",
+    "toggleEnabled": "true",
     "panelBackground": "translucent",
     "radius": "small",
-    "scaling": "105%"
+    "scaling": "110%"
   }
 }

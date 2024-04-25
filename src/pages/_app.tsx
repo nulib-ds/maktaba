@@ -72,6 +72,15 @@ export default function CanopyAppProps({
           --canopy-sans-font: ${dm_sans};
           --canopy-display-font: ${dm_serif_display};
         }
+
+        .radix-themes {
+          --default-font-family: ${dm_sans};
+          --heading-font-family: ${dm_serif_display};
+          --code-font-family: ${dm_sans};
+          --strong-font-family: ${dm_sans};
+          --em-font-family: ${dm_serif_display};
+          --quote-font-family: ${dm_serif_display};
+        }
       `}</style>
       <NextSeo {...seo} />
       <ThemeProvider

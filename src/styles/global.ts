@@ -1,4 +1,5 @@
 import { globalCss } from "@stitches/react";
+import maktaba from "./custom/maktaba";
 
 export const rem = 20;
 export const headerHeight = 60.533333;
@@ -10,6 +11,8 @@ const defaults = {
   },
 
   html: {
+    margin: 0,
+    padding: 0,
     fontFamily: "$sans",
     fontSize: `${rem}px`,
     fontWeight: "500",
@@ -49,6 +52,7 @@ const defaults = {
 
 const globalStyles = globalCss({
   ...defaults,
+  ...maktaba,
 });
 
 export default globalStyles;
