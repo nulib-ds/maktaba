@@ -15,7 +15,7 @@ function getNumber(number) {
 }
 
 function getSlug(text) {
-  return limit(slugify(text, config), 100);
+  return limit(slugify((text = ""), config), 100);
 }
 
 function getUniqueSlug(text, allSlugs) {
