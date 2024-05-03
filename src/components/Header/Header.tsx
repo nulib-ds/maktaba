@@ -4,12 +4,11 @@ import React, { useEffect, useState } from "react";
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Heading } from "@radix-ui/themes";
-import { Label } from "@samvera/clover-iiif/primitives";
 import Link from "next/link";
 import Locale from "@components/Shared/Locale/Locale";
+import MaktabaLogo from "@components/Custom/Logo";
 import Nav from "@components/Nav/Nav";
 import Search from "@components/Search/Search";
-import collections from "@.canopy/collections.json";
 import { useCanopyState } from "@context/canopy";
 import useNavigation from "@src/hooks/useNavigation";
 import { useRouter } from "next/router";
@@ -45,7 +44,7 @@ const Header = () => {
             weight="medium"
             style={{ fontFamily: "var(--canopy-display-font)" }}
           >
-            <Label label={collections[0].label} as="span" />
+            <MaktabaLogo />
           </Heading>
         </Link>
         <ResponsiveActions>
