@@ -21,6 +21,29 @@ const maktaba = {
       },
     },
   },
+
+  // hotfix clover bug where information panel shows annotations
+  ".clover-viewer-content": {
+    aside: {
+      display: "none",
+    },
+  },
+
+  "#scroll-search": {
+    margin: "1rem 1rem",
+    width: "calc(100% - 4rem)",
+
+    "> span": {
+      padding: "0",
+
+      svg: {
+        height: "60%",
+        width: "60%",
+        padding: "20%",
+        boxSizing: "inherit",
+      },
+    },
+  },
 };
 
 export default maktaba;

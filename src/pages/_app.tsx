@@ -78,8 +78,11 @@ export default function CanopyAppProps({
           --heading-font-family: ${dm_serif_display};
           --code-font-family: ${dm_sans};
           --strong-font-family: ${dm_sans};
-          --em-font-family: ${dm_serif_display};
+          --em-font-family: ${dm_sans};
           --quote-font-family: ${dm_serif_display};
+
+          --em-font-size-adjust: inherit;
+          -em-font-weight: inherit;
         }
       `}</style>
       <NextSeo {...seo} />
