@@ -3,6 +3,7 @@ const fs = require("fs");
 const matter = require("gray-matter");
 
 import { GrayMatterFile } from "gray-matter";
+import gfm from "remark-gfm";
 import { serialize } from "next-mdx-remote/serialize";
 
 async function getMarkdownContent({
@@ -21,6 +22,9 @@ async function getMarkdownContent({
 
   // Prepare the source for MDXRemote
   const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [gfm],
+    },
     scope: data,
     parseFrontmatter: true,
   });
