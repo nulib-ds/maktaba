@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[839],{7690:function(s){s.exports=JSON.parse('[{"path":"/essays","text":"Essays"},{"path":"/essays/rushd-essay","text":"Debating the Sciences of the Unseen in the Sahara"}]')}}]);
