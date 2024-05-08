@@ -29,6 +29,10 @@ const maktaba = {
     },
   },
 
+  "section.footnotes ol li": {
+    listStyleType: "unset",
+  },
+
   "#scroll-search": {
     margin: "1rem 1rem",
     width: "calc(100% - 4rem)",
