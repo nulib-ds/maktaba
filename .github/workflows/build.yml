@@ -3,8 +3,6 @@ on: push
 jobs:
   test-build:
     runs-on: ubuntu-latest
-    # Only run if the repository is canopy-iiif/canopy-iiif
-    if: github.repository == 'canopy-iiif/canopy-iiif'
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
