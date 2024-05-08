@@ -7,18 +7,6 @@
   },
   "collection": "https://iiif-maktaba.dc.library.northwestern.edu/collection.json",
   "metadata": ["Date", "Subject"],
-  "locales": [
-    {
-      "config": "locales/en.json",
-      "label": "English إنجليزي",
-      "lang": "en"
-    },
-    {
-      "config": "locales/ar.json",
-      "label": "Arabic عربي",
-      "lang": "ar"
-    }
-  ],
   "search": {
     "enabled": true,
     "flexSearch": {
