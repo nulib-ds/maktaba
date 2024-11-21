@@ -1,5 +1,3 @@
-import { m } from "framer-motion";
-
 const maktaba = {
   // hemistich styling
   "div[data-testid=scroll-item-body]": {

@@ -3,7 +3,6 @@ import { CloverScrollProps } from "@samvera/clover-iiif";
 import Scroll from "../Viewer/Scroll";
 import { headerHeight } from "@src/styles/global";
 import { styled } from "@stitches/react";
-import { width } from "@src/styles/theme/media";
 
 const WorkScroll = (props: CloverScrollProps) => {
   return (
