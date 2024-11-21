@@ -8,7 +8,7 @@ const WorkViewer = (props: CloverViewerProps) => {
       <Viewer
         options={{
           canvasHeight: "100%",
-          canvasBackgroundColor: "var(--accent-a2)",
+          canvasBackgroundColor: "var(--gray-a3)",
         }}
         {...props}
       />

@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 const maktaba = {
   // hemistich styling
   "div[data-testid=scroll-item-body]": {
@@ -29,6 +31,14 @@ const maktaba = {
     },
   },
 
+  ".clover-viewer-header": {
+    display: "none !important",
+  },
+
+  ".clover-viewer-media-wrapper > div > div > button": {
+    display: "none",
+  },
+
   "section.footnotes ol li": {
     listStyleType: "unset",
   },
@@ -47,6 +57,10 @@ const maktaba = {
         boxSizing: "inherit",
       },
     },
+  },
+
+  "section article figure": {
+    margin: "0",
   },
 };
 

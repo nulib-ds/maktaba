@@ -45,8 +45,9 @@
     }
   },
   "theme": {
-    "defaultTheme": "dark",
-    "toggleEnabled": "true",
+    "defaultTheme": "light",
+    "toggleEnabled": "false",
+    "accentColor": "brown",
     "panelBackground": "translucent",
     "radius": "small",
     "scaling": "110%"
