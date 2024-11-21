@@ -13,23 +13,23 @@
       <Tabs.Root defaultValue="annotations">
         <Tabs.List size="2">
           <Tabs.Trigger value="annotations">Translations and Transcriptions</Tabs.Trigger>
-          <Tabs.Trigger value="details">Details</Tabs.Trigger>
           <Tabs.Trigger value="essays">Essays</Tabs.Trigger>
+          <Tabs.Trigger value="details">Details</Tabs.Trigger>
         </Tabs.List>
 
         <Box py="3">
-          <Tabs.Content value="details">
-            <Work.Metadata />
-            <Work.RequiredStatement />
-            <Work.ManifestId />
-          </Tabs.Content>
-
           <Tabs.Content value="annotations">
             <Work.Scroll />
           </Tabs.Content>
 
           <Tabs.Content value="essays">
             <Work.ReferencingContent />
+          </Tabs.Content>
+
+          <Tabs.Content value="details">
+            <Work.Metadata />
+            <Work.RequiredStatement />
+            <Work.ManifestId />
           </Tabs.Content>
 
         </Box>
