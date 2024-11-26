@@ -42,23 +42,16 @@ const maktaba = {
   },
 
   "#scroll-search": {
-    margin: "1rem 1rem",
-    width: "calc(100% - 4rem)",
-
-    "> span": {
-      padding: "0",
-
-      svg: {
-        height: "60%",
-        width: "60%",
-        padding: "20%",
-        boxSizing: "inherit",
-      },
-    },
+    padding: "0",
+    margin: "0",
   },
 
   "section article figure": {
     margin: "0",
+  },
+
+  "section header div[data-testid=scroll-panel] button[role=checkbox] > div": {
+    border: "1px solid #0003",
   },
 };
 

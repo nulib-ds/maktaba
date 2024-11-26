@@ -10,11 +10,16 @@ const WorkScroll = (props: CloverScrollProps) => {
       <Scroll
         {...props}
         options={{
-          offset: headerHeight,
+          offset: headerHeight + 20,
           figure: {
             aspectRatio: 1,
             display: "thumbnail",
             width: "200px",
+          },
+          language: {
+            enabled: true,
+            defaultLanguages: ["en"],
+            options: [{ en: "English" }, { ar: "Arabic" }],
           },
         }}
       />
@@ -22,10 +27,6 @@ const WorkScroll = (props: CloverScrollProps) => {
   );
 };
 
-const StyledWorkScroll = styled(Box, {
-  header: {
-    display: "none",
-  },
-});
+const StyledWorkScroll = styled(Box, {});
 
 export default WorkScroll;
