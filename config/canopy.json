@@ -51,5 +51,10 @@
     "panelBackground": "translucent",
     "radius": "small",
     "scaling": "110%"
+  },
+  "vendor": {
+    "googleTagManager": {
+      "gtmId": "GTM-XXXXXXXX"
+    }
   }
 }
