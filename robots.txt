@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://potential-adventure-6391vr6.pages.github.io
+Host: https://nulib-ds.github.io/maktaba
 
 # Sitemaps
-Sitemap: https://potential-adventure-6391vr6.pages.github.io/sitemap.xml
+Sitemap: https://nulib-ds.github.io/maktaba/sitemap.xml
