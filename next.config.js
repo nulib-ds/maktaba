@@ -37,6 +37,18 @@ module.exports = (phase) => {
     basePath,
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
     redirects,
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "iiif.dc.library.northwestern.edu",
+        },
+        {
+          protocol: "https",
+          hostname: "images.digital.library.illinois.edu",
+        },
+      ],
+    },
     typescript: {
       ignoreBuildErrors: true,
     },

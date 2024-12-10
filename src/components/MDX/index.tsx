@@ -12,7 +12,9 @@ import { CodeInline } from "@components/Shared/Code/Code.styled";
 import Container from "@components/Shared/Container";
 import Header from "../Header/Header";
 import Heading from "@components/Shared/Heading/Heading";
+import HomePageCard from "@components/Custom/HomepageCard";
 import Image from "@components/MDX/Image";
+import Link from "@components/Shared/Link";
 import ReferencedItems from "@src/components/MDX/ReferencedItems";
 import Scroll from "@components/MDX/Scroll";
 import Slider from "@components/MDX/Slider";
@@ -45,7 +47,7 @@ const markdownComponents = {
   h4: (props) => <Heading as="h4" {...props} />,
   h5: (props) => <Heading as="h5" {...props} />,
   code: (props) => <CodeInline {...props} />,
-  a: (props) => <RadixThemes.Link {...props} />,
+  a: (props) => <Link {...props} />,
   em: (props) => <RadixThemes.Em {...props} />,
   strong: (props) => <RadixThemes.Strong {...props} />,
   blockquote: (props) => <RadixThemes.Blockquote {...props} />,
@@ -71,6 +73,7 @@ const CanopyMDXRemote = ({
       {...source}
       components={{
         ...RadixThemes,
+        HomePageCard,
         ...markdownComponents,
         ...canopyComponents,
         ...customComponents,
