@@ -14,32 +14,31 @@ Here you can explore a selection of manuscripts from the libraries of the Univer
 
 ## Explore the intellectual heritage of Muslim West Africa with primary sources.
 
-    <Flex gap="5">
-    	<Box style={{ width: "33.3333%" }}>
-    		<HomePageCard
-    			href="/works"
-    			title="Browse Manuscripts"
-    			description="View manuscript images alongside their English translations."
-    			image="https://iiif.dc.library.northwestern.edu/iiif/3/ec7be632-3807-457f-9ad3-4cb3c1c463d8/full/300,300/0/default.jpg"
-    		/>
-    	</Box>
-    	<Box style={{ width: "33.3333%" }}>
-    		<HomePageCard
-    			href="/essays"
-    			title="Read Essays"
-    			description="Read our selection of contextual essays by leading scholars and translators."
-    			image="https://iiif.dc.library.northwestern.edu/iiif/3/a2614855-b104-4c87-b455-3ab23d5fc771/full/300,300/0/default.jpg"
+    <Flex
+    	gap="5"
+    	direction={{
+    		initial: "column",
+    		sm: "row",
+    	}}>
+    	<HomePageCard
+    		href="/works"
+    		title="Browse Manuscripts"
+    		description="View manuscript images alongside their English translations."
+    		image="https://iiif.dc.library.northwestern.edu/iiif/3/ec7be632-3807-457f-9ad3-4cb3c1c463d8/full/300,300/0/default.jpg"
+    	/>
+    	<HomePageCard
+    		href="/essays"
+    		title="Read Essays"
+    		description="Read our selection of contextual essays by leading scholars and translators."
+    		image="https://iiif.dc.library.northwestern.edu/iiif/3/a2614855-b104-4c87-b455-3ab23d5fc771/full/300,300/0/default.jpg"
 
-    		/>
-    	</Box>
-    	<Box style={{ width: "33.3333%" }}>
-    		<HomePageCard
-    			href="/about"
-    			title="About Maktaba"
-    			description="Meet the contributors, learn about the collections, and more."
-    			image="https://images.digital.library.illinois.edu/iiif/2/18df9e90-96bc-013c-4aba-02d0d7bfd6e4-e/full/300,300/0/default.jpg"
-    		/>
-    	</Box>
+    	/>
+    	<HomePageCard
+    		href="/about"
+    		title="About Maktaba"
+    		description="Meet the contributors, learn about the collections, and more."
+    		image="https://images.digital.library.illinois.edu/iiif/2/18df9e90-96bc-013c-4aba-02d0d7bfd6e4-e/full/300,300/0/default.jpg"
+    	/>
     </Flex>
 
 </Section>
