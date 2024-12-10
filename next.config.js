@@ -38,6 +38,7 @@ module.exports = (phase) => {
     pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
     redirects,
     images: {
+      unoptimized: true,
       remotePatterns: [
         {
           protocol: "https",
