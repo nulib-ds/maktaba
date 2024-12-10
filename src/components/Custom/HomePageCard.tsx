@@ -47,7 +47,7 @@ const HomePageCard: React.FC<HomePageCardProps> = ({
           </Inset>
         </CanopyLink>
         <CanopyLink href={href}>
-          <Heading as="h3" size="4" mb="3">
+          <Heading as="h3" size="5" mb="3">
             {title}
           </Heading>
         </CanopyLink>
