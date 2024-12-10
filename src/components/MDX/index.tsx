@@ -12,7 +12,7 @@ import { CodeInline } from "@components/Shared/Code/Code.styled";
 import Container from "@components/Shared/Container";
 import Header from "../Header/Header";
 import Heading from "@components/Shared/Heading/Heading";
-import HomePageCard from "@components/Custom/HomepageCard";
+import HomePageCard from "@src/components/Custom/HomePageCard";
 import Image from "@components/MDX/Image";
 import Link from "@components/Shared/Link";
 import ReferencedItems from "@src/components/MDX/ReferencedItems";
