@@ -23,6 +23,7 @@ const Items = styled("div", {
           color: "var(--gray-11)",
           padding: "$gr1 0 ",
           marginBottom: "0",
+          paddingRight: "$gr4",
 
           [`&.active`]: {
             color: "var(--gray-12) !important",

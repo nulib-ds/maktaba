@@ -3,9 +3,11 @@ import { styled } from "@styles/stitches";
 
 /* eslint sort-keys: 0 */
 
+const asideWidth = "300px";
+
 const AsideFixedContent = styled("div", {
   position: "fixed",
-  width: "275px",
+  width: asideWidth,
   paddingTop: "calc($gr4 + $gr3)",
   marginTop: "-$gr4",
   maxHeight: `calc(100% - $gr5 - ${headerHeight}px)`,
@@ -21,7 +23,7 @@ const AsideFixedContent = styled("div", {
 });
 
 const AsideStyled = styled("aside", {
-  width: "275px",
+  width: asideWidth,
 
   "@xs": {
     position: "relative",
@@ -34,7 +36,7 @@ const AsideStyled = styled("aside", {
 
 const ContentStyled = styled("div", {
   flexShrink: 1,
-  width: "calc(100% - 275px)",
+  width: `calc(100% - ${asideWidth})`,
 
   "@xs": {
     width: "100%",
