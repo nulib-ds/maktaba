@@ -1,5 +1,9 @@
 import { Flex } from "@radix-ui/themes";
 import Image from "next/image";
+import illinois from "@/public/images/illinois.jpg";
+import neh from "@/public/images/neh.jpg";
+import northwestern from "@/public/images/northwestern.jpg";
+import northwesternIsita from "@/public/images/northwestern-isita.jpg";
 
 const FooterLogos = () => {
   return (
@@ -13,25 +17,25 @@ const FooterLogos = () => {
     >
       <Image
         alt="Northwestern University"
-        src="/images/northwestern.jpg"
+        src={northwestern}
         width={150}
         height={48}
       />
       <Image
         alt="Northwestern Institute for the Study of Islamic Thought in Africa"
-        src="/images/northwestern-isita.jpg"
+        src={northwesternIsita}
         width={150}
         height={64}
       />
       <Image
         alt="University of Illinois Urbana-Champaign"
-        src="/images/illinois.jpg"
+        src={illinois}
         width={150}
         height={39}
       />
       <Image
         alt="National Endowment for the Arts"
-        src="/images/neh.jpg"
+        src={neh}
         width={150}
         height={55}
       />
