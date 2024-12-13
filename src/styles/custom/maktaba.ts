@@ -53,6 +53,15 @@ const maktaba = {
   "section header div[data-testid=scroll-panel] button[role=checkbox] > div": {
     border: "1px solid #0003",
   },
+
+  // hotfix clover bug where information panel shows annotations
+  ".clover-viewer-content": {
+    aside: {
+      display: "none",
+    },
+  },
+
+  "main table": {},
 };
 
 export default maktaba;

@@ -15,6 +15,7 @@ import Heading from "@components/Shared/Heading/Heading";
 import HomePageCard from "@src/components/Custom/HomePageCard";
 import Image from "@components/MDX/Image";
 import Link from "@components/Shared/Link";
+import MDXTable from "./Table";
 import ReferencedItems from "@src/components/MDX/ReferencedItems";
 import Scroll from "@components/MDX/Scroll";
 import Slider from "@components/MDX/Slider";
@@ -51,6 +52,7 @@ const markdownComponents = {
   em: (props) => <RadixThemes.Em {...props} />,
   strong: (props) => <RadixThemes.Strong {...props} />,
   blockquote: (props) => <RadixThemes.Blockquote {...props} />,
+  table: (props) => <MDXTable {...props} />,
   pre: (props) => {
     const string = props?.children?.props?.children;
     const language = props?.children?.props?.className?.replace(
